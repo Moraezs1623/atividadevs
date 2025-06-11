@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <link rel="stylesheet" type="text/css" href="atv.css">
+
+
+</head>
+<body>
+    <header>cabeçalho</header>
+    <a href="#" id="logo">LOGO</a>
+    <button id="openMenu">&#9776:</button>
+    <nav id="menu">
+        <button id="closeMenu"></button>
+        <a href="#">inicios</a>
+        <a href="#">produtos</a>
+        <a href="#">sobre</a>
+        <a href="#">contato</a>
+    </nav>
+    <main>Principal</main>
+    <aside>relacionado</aside>
+    <footer>rodapé</footer>
+</body>
+<script>
+openMenu.addEventListener('click', () => {
+    menu.style.display = 'flex'
+
+    menu.style.right = (menu.offsetWidth * -1) + 'px'
+    setTimeout(() =>{
+        menu.style.opacity = '1'
+    }, 10)
+    menu.style.opacity = '1'
+    openMenu.style.display = 'none'
+    menu.style.right = '0'
+})
+
+closeMenu.addEventListener(click, () = {
+    menu.removeAttribute('style')
+    menu.style.opacity = '0'
+
+    menu.style.right = (menu.offsetWidth * -1) + 'px'
+
+    setTimeout(() => {
+        menu.removeAttribute('style')
+    }, 200)
+
+    openMenu.removeAttribute('style')
+}>)
+</script>
+
+</html>
